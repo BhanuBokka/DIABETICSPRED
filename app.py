@@ -42,8 +42,8 @@ def showpatient():
     data=[]
     for i in cur.fetchall():
         patient={}
-        patient['Name']=i[0]
-        patient['Result']=i[1]
+        patient['name']=i[0]
+        patient['result']=i[1]
         data.append(patient)
     return render_template('showpatient.html',data=data)
 
