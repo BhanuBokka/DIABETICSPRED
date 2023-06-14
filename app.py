@@ -34,7 +34,7 @@ def predict():
     else:
         return render_template('predict.html')
 
-@app.route('/patients',methods=['GET','POST'])
+@app.route('/patient',methods=['GET','POST'])
 def showpatient():
     conn=sqlite3.connect('patient1.db')
     cur=conn.cursor()
